@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color:;
+}
+#page1 #nav{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 20px 40px;
+    gap: 26%;
+    font-size: 13px;
+}
+#page1 #nav img{
+    height: 70px;
+    margin-top: 0px;
+}
+#page1 #nav #rnav{
+    display: flex;
+    gap: 60px;
+    padding-left: 70px;
+    padding-top: 29px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.nani {
+    /* display: inline-block; */
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .nani::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+  .nani:hover::after {
+    width: 100%;
+    transform: translateX(-50%);
+  }
+
+  .nani:hover {
+    transform: translateY(-3px);
+  }
+#page1 #nav #rnav button{
+    height: 55px;
+    width: 120px;
+    border-radius: 10px;
+    margin-top: -20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding-top: 3px;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+#page1 #nav #rnav button::after{
+    content: '';
+    position: absolute;
+    top: 55px;
+    right: -1px;
+    height: 55px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.632);
+    color: white;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+#page1 #nav #rnav button:hover::after{
+    top: 0;
+    z-index: 1;
+}
+#page1 #nav #rnav button .insi{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+    bottom: -120%;
+    color: black;
+    padding-top: 21px;
+    font-size: 15px;
+}
+#page1 #nav #rnav button:hover .insi{
+    bottom: 0;
+    z-index: 2;
+}
+#page1 #nav #rnav button:hover{
+    color: black;
+}
+#page1 #twnav{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    gap: 50px;
+    display: flex;
+    padding: 15px 30px;
+    
+}
+#twrnav{
+    margin-left: 210px;
+    display: flex;
+    float: right;
+    gap: 15px;
+} 
+#page1 #dwncen{
+    height: 90%;
+    width: 100%;
+}
+#dwncen img{
+    height: 100%;
+    width: 100%;
+}
+#page1 #qnav{
+    height: 150px;
+    width: 55px;
+    background-color: #4B2581;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+}
+#page1 #qnav h3{
+    font-size: 22px;
+}
+#page1 #qnav h4{
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    font-weight: 500;
+    white-space: nowrap;
+    margin-top: 25px;
+}
+#page2{
+    height: 113%;
+    width: 100%;
+    padding-top: 90px;
+    text-align: center;
+}
+#page2 p{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#page2 #pagecards{
+    height: 79%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 30px 20px;
+}
+#pagecards .cardz{
+    height: 90%;
+    width: 40%;
+    background-color: aquamarine;
+    position: relative;
+    transition: all ease 1s;
+}
+.cardz img{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.cardz h3{
+    color: #FFFFFF;
+    margin-left: 28px;
+    margin-top: -150px;
+    padding: 6px 10px;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.477);
+    position: absolute;
+    z-index: 2;
+    transition: all ease 1s;
+}
+.cardz:hover{
+    scale: 1.1;
+}
+.cardz:hover h3{
+    scale: 1.1;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 30px 30px;
+    gap: 20px;
+}
+#lpage3{
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#lpage3 img{
+    height: 100%;
+    width: 100%;
+}
+#rpage3{
+    height: 100%;
+    width: 50%;
+    padding-left: 40px;
+}
+#rpage3 h1{
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
+#rpage3 p{
+    font-size: 20px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+}
+#page3 #rpage3 #butbac{
+    margin-left: 25px;
+    margin-top: 25px;
+    height: 70px;
+    width: 140px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #c7c8c9;
+    /* border-image: linear-gradient(to right,#3B5D6B ,#58A287) 1; */
+    /* padding-left: 56px; */
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    white-space: nowrap;
+    display: flex;
+    /* gap: 3px; */
+    z-index: 1;
+    position: absolute;
+}
+
+#page3 #rpage3 button{
+    margin-left: 1px;
+    height: 70px;
+    width: 140px;
+    border-radius: 5px;
+    margin-top: 48px;
+    color: white;
+    background: linear-gradient(to right,grey ,black);
+    border: 1px solid transparent;
+    /* border-image: linear-gradient(to right,#3B5D6B ,#58A287) 1; */
+    /* padding-left: 56px; */
+    padding-top: 24px;
+    padding-left: 15px;
+    font-size: 30px;
+    white-space: nowrap;
+    display: flex;
+    /* gap: 3px; */
+    z-index: 2;
+    position: relative;
+    text-align: left;
+    font-size: 19px;
+    transition: all 0.4s ease-in-out;
+    /* transition: background 10s ease-in-out; */
+}
+#page3 #rpage3 button #circ{
+    /* margin-top: 35px; */
+    margin-left: 15px;
+    height: 22px;
+    width: 23px;
+    border-radius: 100%;
+    color: black;
+    background-color: #ffff;
+}
+#page3 #rpage3 button #circ svg{
+    height: 13px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+#page3 #rpage3 button:hover{
+    margin-left: 25px;
+    margin-top: 25px;
+    background: linear-gradient(to top right  ,black ,grey);
+}
+
+#moveprem{
+    height: 90px;
+    width: 100%;
+    background-color: white;
+  }
+  #moveprem #moving-text{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4B2581;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 2px solid #9A6D31;
+    border-bottom: 2px solid #9A6D31;
+  }
+  #moving-text::-webkit-scrollbar{
+    display: none;
+  }
+  #moving-text h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #9A6D31;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 400;
+    color: #F7EE9C;
+    margin-right: 20px;
+    font-family: monument;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-100% - 24px));
+    }
+  }
+#page4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 30px 40px;
+    gap: 10px;
+}  
+#page4 #lpage4{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+#lpage4 img{
+    height: 100%;
+    width: 100%;
+}
+#lpage4 h3{
+    color: #FFFFFF;
+    margin-left: 220px;
+    margin-top: -300px;
+    padding: 10px 13px;
+    font-size: 18px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+#lpage4:hover h3{
+    scale: 1.1;
+}
+#page4 #rpage4{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+}
+#rpage4 img{
+    height: 100%;
+    width: 100%;
+}
+#rpage4 h3{
+    color: black;
+    margin-left: 220px;
+    margin-top: -300px;
+    padding: 10px 13px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+#rpage4:hover h3{
+    scale: 1.1;
+}
+#page5{
+    height: 70%;
+    width: 100%;
+    background-color: black;   
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /* overflow: hidden; */
+  }
+  
+  .cylinder {
+    position: absolute;
+    top: 3%;
+    left: 160%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust the width of the cylinder */
+    height: 400px; /* Adjust the height of the cylinder */
+    border-radius: 100px;
+    background-color: #4B2581;
+    overflow: hidden;
+    animation: pendulum 10s infinite ease-in-out;
+  }
+  .cylinder h3{
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 0px;
+    color: #F7EE9C;
+    text-align: center;
+  }
+  .pendulum {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    transform-origin: bottom center;
+    transform: translateX(50%);
+    width: 100px; /* Adjust the width of the pendulum */
+    height: 200px; /* Adjust the height of the pendulum */
+    /* background-color: #fff; */
+  }
+  
+  @keyframes pendulum {
+      0% {
+        transform: translateX(-50%) rotate(0deg); /* Adjust the initial rotation */
+      }
+      30% {
+        transform: translateX(-50%) rotate(-45deg); /* Adjust the maximum rotation */
+      }
+      50% {
+        transform: translateX(-50%) rotate(0deg); /* Adjust the final rotation */
+      }
+      80% {
+          transform: translateX(-50%) rotate(45deg); /* Adjust the maximum rotation */
+      }
+      100% {
+          transform: translateX(-50%) rotate(0deg); /* Adjust the maximum rotation */
+      }
+  
+  } 
+  .pendulum img {
+    width: 100%; /* Adjust the image size */
+    height: auto;
+  }
+#page6{
+    height: 100%;
+    width: 100%;
+}
+#page6 #asss{
+    padding: 20px 20px;
+    height: 160px;
+    width: 100%;
+    text-align: center;
+}
+#page6 #asss h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+#page6 #asss p{
+    font-size: 18px;
+}
+#page6 #pagecards1{
+    height: 79%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 30px 20px;
+}
+#pagecards1 .cardz1{
+    height: 90%;
+    width: 40%;
+    background-color: aquamarine;
+    position: relative;
+    transition: all ease 1s;
+}
+.cardz1 img{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.cardz1 h3{
+    color: #FFFFFF;
+    margin-left: 28px;
+    margin-top: -150px;
+    padding: 6px 10px;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.477);
+    position: absolute;
+    z-index: 2;
+    transition: all ease 1s;
+}
+.cardz1:hover{
+    scale: 1.1;
+}
+.cardz1:hover h3{
+    scale: 1.1;
+}
+#page7{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#lpage7{
+    height: 100%;
+    width: 50%;
+    /* overflow: hidden; */
+    padding: 40px 40px;
+}
+#lpage7 img{
+    height: 100%;
+    width: 100%;
+}
+#rpage7{
+    height: 100%;
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 120px;
+}
+#rpage7 h4{
+    padding-bottom: 7px;
+}
+#rpage7 h3{
+    padding-bottom: 7px;
+}
+#rpage7 p{
+    font-size: 17px;
+    padding-bottom: 28px;
+}
+#page8{
+    height: 80%;
+    width: 100%;
+}
+#page8 #tppage8{
+    text-align: center;
+    padding: 20px 0px;
+}
+#tppage8 h2{
+    padding-bottom: 5px;
+}
+#tppage8 button{
+    height: 35px;
+    width: 90px;
+    background-color: white;
+    border: 1px solid grey;
+    font-weight: 500;
+    font-family: gilroy;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+
+}
+#tppage8 button:hover{
+    background-color: black;
+    color: white;
+}
+#page8 #cenpage8{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+}
+#cenpage8 .cardss{
+    height: 60%;
+    width: 50%;
+    cursor: pointer;
+}
+.cardss img{
+    height: 100%;
+    width: 100%;
+}
+.cardss h3{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(65, 64, 64);
+}
+#page9{
+    height: 25%;
+    width: 100%;
+    background-color: #1F1F1F;
+    display: flex;
+    gap: 68px;
+    padding: 0px 90px;
+}
+#page9 .mdz{
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+}
+.mdz img{
+    margin-top: 40px;
+    margin-left: 90px;
+    height: 6%;
+    width: auto;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+.mdz h3{
+    margin-top: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.mdz:hover img{
+    margin-top: 30px;
+    position: absolute;
+}
+#page10{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#page10 #inpage10{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+} 
+.pg10z{
+    height: 100%;
+    width: 25%;
+    position: relative;
+    padding: 20px 20px;
+}
+#page101 #dib{
+    height: 20%;
+    width: 90%;
+    cursor: pointer;
+}
+#link{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    left: -10%;
+    /* padding-right: 200px; */
+    margin-top: 0px;
+    gap: 20px;
+  }
+  #link h5{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease .5s;
+    color: #FFFFFF;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  #link h5 i.ri-instagram-line:hover{
+    color: #f706bb;
+  }
+  #link h5 i.ri-twitter-fill:hover{
+    color: rgb(0, 102, 255);
+  }
+  #link h5 i.ri-linkedin-fill:hover{
+    color: #06bff7;
+  }
+  #link h5 i.ri-facebook-box-line:hover{
+    color: rgb(30, 30, 206);
+  }
+  #link h5 i.ri-youtube-fill:hover{
+    color: #bc0303;
+  }
+.pg10z h4{
+    padding-bottom: 30px;
+    color: white;
+}
+.pg10z h6{
+    padding-bottom: 10px;
+    font-size: 13px;
+    color: white;
+}
+.pg10z h3{
+    padding-bottom: 10px;
+    color: white; 
+}
+#dwpage10{
+    text-align: center;
+}
+#dwpage10 img{
+    cursor: pointer;
+}
+#dwpage10 h6{
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
